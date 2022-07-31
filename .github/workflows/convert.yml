@@ -1,4 +1,4 @@
-name: convert
+name: build
 
 on: 
   push:
@@ -8,7 +8,7 @@ on:
       - 'overrides'
 
 jobs:
-  convert:
+  build:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
