@@ -16,7 +16,7 @@ jobs:
           fetch-depth: 0
       - run: |
           pwd
-          ll
+          ls
           bash convert.sh
       - uses: docker://pandoc/core:2.9
         with:
