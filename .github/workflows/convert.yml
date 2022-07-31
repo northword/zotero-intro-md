@@ -19,10 +19,10 @@ jobs:
       - name: Pre-convert
         run: |
           bash convert.sh
-      # - name: Convert via pandoc
-      #   uses: docker://pandoc/core:2.9
-      #   with:
-      #     args: "-s ./docs/Ezotero_intro.tex -o ./docs/Ezotero.md" 
+      - name: Convert via pandoc
+        uses: docker://pandoc/core:2.9
+        with:
+          args: "-s ./docs/Ezotero_intro.tex -t markdown -o ./docs/Ezotero.md --markdown-headings=atx" 
       - name: Post-convert
         run: |
           tree
