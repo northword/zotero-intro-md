@@ -1,4 +1,9 @@
 #! /bin/bash
+
+if [ ! -d "docs" ]; then
+  mkdir docs
+fi
+
 cp ./tex/image/* ./docs
 cp ./tex/*.tex ./docs
 if (  type pandoc  ); then

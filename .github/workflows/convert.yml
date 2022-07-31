@@ -11,12 +11,14 @@ jobs:
   convert:
     runs-on: ubuntu-18.04
     steps:
-      - run: bash convert.sh             # 转换前置准备
-      - uses: docker://pandoc/core:2.9   # 使用 pandoc 将 .tex 转为 .md 
+      - run: |
+          pwd
+          bash convert.sh
+      - uses: docker://pandoc/core:2.9
         with:
           args: "-s ./docs/Ezotero_intro.tex -o ./docs/Ezotero.md" 
       - run: |
-          bash split.sh                  # 将生成的 .md 按标题级别拆分
+          bash split.sh                  
           bash commit.sh
 
 
