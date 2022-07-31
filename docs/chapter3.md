@@ -6,7 +6,7 @@
 
 使用Zotero来同步题录信息需要注册Zotero用户，注册的网址是<https://www.zotero.org/user/register>，注册的流程与一般网站注册用户差别不大， 填入用户名，Email，密码等，然后点击进行人机身份验证前的方框， 根据提示完成后续步骤，最后点击 完成注册， 如[\[fig:ch3Register\]](#fig:ch3Register){reference-type="autoref" reference="fig:ch3Register"}所示。注册完成后网站提示： Thanks for registering. We've sent an email to activate your account. 而后查收邮箱，会收到如下内容的邮件：Thanks for signing up for a zotero.org account! Please confirm your email address by clicking on the following link or pasting it into your browser: <https://www.zotero.org/user/validate/1ab18fc52bb2b7ba6ddb>,validate后面的内容会有差异， 将这些地址复制到浏览器地址栏，按回车，如果页面显示：Success! You registered your Zotero account!则邮箱验证成功。 如果收件箱内没有收到邮件，可以到垃圾邮件内找找，有可能这封邮件被邮件系统误认为是垃圾邮件了。不进行激活也可以使用， 但是无法创建群组(创建群组见[4.1](#sec:CreatGroup){reference-type="ref" reference="sec:CreatGroup"})。值得注意的是，注册Zotero用户时需要翻墙， 因为这个网站需要调用Google的人机身份验证，如果不翻墙的话， 无法完成注册[^9]， 当然也可以请国外的亲朋好友帮忙注册用户。 完成Zotero用户注册以后还需要在Zotero登录才能进行题录信息的同步，登录的方法见[3.4](#sec:syn){reference-type="ref" reference="sec:syn"}。
 
-![注册Zotero界面](ch3Register){#fig:ch3Register width="0.3\\linewidth"}
+![注册Zotero界面](ch3Register.png){#fig:ch3Register width="0.3\\linewidth"}
 
 ## 坚果云注册及设置 {#sec:jianguoReg}
 
@@ -14,17 +14,17 @@
 
 1.  根据自己的操作系统到<https://www.jianguoyun.com/s/downloads>下载相应的客户端， 并进行安装， 安装过程与其他程序大同小异，在此不再赘述。安装完成以后，在系统托盘中会出现一个坚果的图标。 如果没有图标，可以到坚果云的安装目录中双击Nutstore.exe运行坚果云同步盘， 运行后需要注册一个坚果云的用户， 如[\[fig:ch3JianguoRe\]](#fig:ch3JianguoRe){reference-type="autoref" reference="fig:ch3JianguoRe"}所示，填入需要Email、 密码及昵称等信息，如[\[fig:ch3JianguoReg2\]](#fig:ch3JianguoReg2){reference-type="autoref" reference="fig:ch3JianguoReg2"}所示， 点击，可能还需要手机验证。 后续还需要设置的文献贮存的地址，如[\[fig:ch3JianguoReg3\]](#fig:ch3JianguoReg3){reference-type="autoref" reference="fig:ch3JianguoReg3"}所示， 然后关闭此窗口。 当然也可以在坚果云的网站<https://www.jianguoyun.com/d/signup>上注册用户, 然后在[\[fig:ch3JianguoRe\]](#fig:ch3JianguoRe){reference-type="autoref" reference="fig:ch3JianguoRe"}点击， 登录完毕后再设置需要同步的目录。
 
-    ![坚果云用户注册步骤2](ch3JianguoRe){#fig:ch3JianguoReg2}
+    ![坚果云用户注册步骤2](ch3JianguoRe.png){#fig:ch3JianguoReg2}
 
-    ![坚果云用户注册步骤2](ch3JianguoReg2){#fig:ch3JianguoReg2}
+    ![坚果云用户注册步骤2](ch3JianguoReg2.png){#fig:ch3JianguoReg2}
 
 2.  此时，将文件或文件夹复制到[\[fig:ch3JianguoReg3\]](#fig:ch3JianguoReg3){reference-type="autoref" reference="fig:ch3JianguoReg3"}的所设置的文件内， 坚果云就会将文件同步到坚果云的服务器上， 如果在其他电脑上登录坚果云的同一用户客户端后， 坚果云会自动将这些文件或文件夹同步到本地。
 
-    ![坚果云用户注册步骤3](ch3JianguoReg3){#fig:ch3JianguoReg3}
+    ![坚果云用户注册步骤3](ch3JianguoReg3.png){#fig:ch3JianguoReg3}
 
 3.  因为同步文献全文的需要， 我们需要将同步的文件夹设置我们在[\[fig:ch3BaseDir\]](#fig:ch3BaseDir){reference-type="autoref" reference="fig:ch3BaseDir"}中设置的附件存放的位置， 即图中Base directory的路径， 如；在Windows资源管理器中 找到，在上右击， 选择，如[\[fig:ch4JianguoAdd\]](#fig:ch4JianguoAdd){reference-type="autoref" reference="fig:ch4JianguoAdd"}所示； 在接下来的两个对话框中点击 ，正常情况下左下角会出现绿色 对勾表示同步完成，若左下角出现蓝色圆圈则表示正在同步。 当然也可以直接将目录剪切到 [\[fig:ch3JianguoReg3\]](#fig:ch3JianguoReg3){reference-type="autoref" reference="fig:ch3JianguoReg3"}目录中， 但是需要在Zotero中 将Base directory（见[1.3](#sec:newLibrary){reference-type="ref" reference="sec:newLibrary"}） 和[ZotFile](http://zotfile.com/)的附件存在的位置也设为这个目录（见[3.5](#sec:zotFilePre){reference-type="ref" reference="sec:zotFilePre"}）。
 
-    ![将references文件夹加入到同步中](ch4JianguoAdd){#fig:ch4JianguoAdd width="0.5\\linewidth"}
+    ![将references文件夹加入到同步中](ch4JianguoAdd.png){#fig:ch4JianguoAdd width="0.5\\linewidth"}
 
 4.  在新的需要同步的另一台电脑上，同样安装上坚果云软件，登录后，默认的 reference文件夹放在了[\[fig:ch3JianguoReg3\]](#fig:ch3JianguoReg3){reference-type="autoref" reference="fig:ch3JianguoReg3"}的目录中，在Zotero中 将Base directory（见[1.3](#sec:newLibrary){reference-type="ref" reference="sec:newLibrary"}） 和[ZotFile](http://zotfile.com/)的附件存在的位置也设为这个目录（见[3.5](#sec:zotFilePre){reference-type="ref" reference="sec:zotFilePre"}）， 两个电脑之间包括参考文献条目和附件就可以同步了。
 
@@ -36,27 +36,27 @@ Zotero可以对题录的全文进行管理，在链接上全文以后，Zotero�
 
 1.  到[ZotFile](http://zotfile.com/)的GitHub网站<https://github.com/jlegewie/zotfile/releases> 下载[ZotFile](http://zotfile.com/)插件最新版zotfile-v.v.v-fx.xpi(v为具体的版本号)，如[\[fig:ch3ZotFileDown\]](#fig:ch3ZotFileDown){reference-type="autoref" reference="fig:ch3ZotFileDown"}所示，
 
-    ![下载ZotFile插件](ch3ZotFileDown){#fig:ch3ZotFileDown}
+    ![下载ZotFile插件](ch3ZotFileDown.png){#fig:ch3ZotFileDown}
 
 2.  Zotero插件与Zotero中其他插件(扩展)的安装方法相同，方法是在Zotero菜单中点击， 如[\[fig:ch3ZotFileInstall1\]](#fig:ch3ZotFileInstall1){reference-type="autoref" reference="fig:ch3ZotFileInstall1"}所示。
 
-    ![ZotFile插件安装步骤1](ch3ZotFileInstall1){#fig:ch3ZotFileInstall1 width="0.5\\linewidth"}
+    ![ZotFile插件安装步骤1](ch3ZotFileInstall1.png){#fig:ch3ZotFileInstall1 width="0.5\\linewidth"}
 
 3.  在弹出的对话框中， 依次点击， 如[\[fig:ch3ZotFileInstall2\]](#fig:ch3ZotFileInstall2){reference-type="autoref" reference="fig:ch3ZotFileInstall2"}所示。
 
 4.  然后找到以前下载的zotfile-v.v.v-fx.xpi(v为具体的版本号)，如[\[fig:ch3ZotFileInstall3\]](#fig:ch3ZotFileInstall3){reference-type="autoref" reference="fig:ch3ZotFileInstall3"}所示。
 
-    ![ZotFile插件安装步骤3](ch3ZotFileInstall2){#fig:ch3ZotFileInstall3 width="0.7\\linewidth"}
+    ![ZotFile插件安装步骤3](ch3ZotFileInstall2.png){#fig:ch3ZotFileInstall3 width="0.7\\linewidth"}
 
-    ![ZotFile插件安装步骤3](ch3ZotFileInstall3){#fig:ch3ZotFileInstall3 width="0.6\\linewidth"}
+    ![ZotFile插件安装步骤3](ch3ZotFileInstall3.png){#fig:ch3ZotFileInstall3 width="0.6\\linewidth"}
 
 5.  随后出现一个3s倒计时，提示安装信任的扩展，结束后， 点击开始安装，如[\[fig:ch3ZotFileInstall4\]](#fig:ch3ZotFileInstall4){reference-type="autoref" reference="fig:ch3ZotFileInstall4"}所示。
 
 6.  安装完成后，会提示[ZotFile](http://zotfile.com/)在重启Zotero后安装， 点击重启，如[\[fig:ch3ZotFileInstall5\]](#fig:ch3ZotFileInstall5){reference-type="autoref" reference="fig:ch3ZotFileInstall5"}所示， 或是再安装完其他插件后一块重启， 重启后会如果发现Zotero 菜单下有，说明[ZotFile](http://zotfile.com/)插件安装成功， [ZotFile](http://zotfile.com/)插件的设置见[3.5](#sec:zotFilePre){reference-type="ref" reference="sec:zotFilePre"}。
 
-    ![ZotFile插件安装步骤4](ch3ZotFileInstall4){#fig:ch3ZotFileInstall4}
+    ![ZotFile插件安装步骤4](ch3ZotFileInstall4.png){#fig:ch3ZotFileInstall4}
 
-    ![ZotFile插件安装步骤5](ch3ZotFileInstall5){#fig:ch3ZotFileInstall5}
+    ![ZotFile插件安装步骤5](ch3ZotFileInstall5.png){#fig:ch3ZotFileInstall5}
 
 ## Zotero中同步设置 {#sec:syn}
 
@@ -66,15 +66,15 @@ Zotero中的同步设置包括题录同步和全文同步， 我们使用Zotero�
 
 2.  在弹出的Zotero Preferences对话框中点击， 然后在Setting中输入[3.1](#sec:zotReg){reference-type="ref" reference="sec:zotReg"}中申请的Zotero的用户名和密码后， 点击，如[\[fig:ch3ZoteroPre2\]](#fig:ch3ZoteroPre2){reference-type="autoref" reference="fig:ch3ZoteroPre2"}所示。
 
-    ![Zotero同步设置](ch3ZoteroPre1){#fig:ch3ZoteroPre2}
+    ![Zotero同步设置](ch3ZoteroPre1.png){#fig:ch3ZoteroPre2}
 
-    ![Zotero同步设置](ch3ZoteroPre2){#fig:ch3ZoteroPre2}
+    ![Zotero同步设置](ch3ZoteroPre2.png){#fig:ch3ZoteroPre2}
 
 3.  如果输入的用户名、密码正确，会弹出文件同步的选项， 点击和 前面的方框使之选中，下面的两个选项不要选中， 如[\[fig:ch3ZoteroPre3\]](#fig:ch3ZoteroPre3){reference-type="autoref" reference="fig:ch3ZoteroPre3"}所示，因为Zotero提供的全文同步空间有限， 我们在[3.2](#sec:jianguoReg){reference-type="ref" reference="sec:jianguoReg"}中设置了用坚果云同步全文，但此时Zotero还不能同步全文到其他电脑， 还需要使用[ZotFile](http://zotfile.com/)插件将全文附件自动复制到坚果云的同步盘中， 见[3.5](#sec:zotFilePre){reference-type="ref" reference="sec:zotFilePre"}。
 
 4.  也可以利用坚果云提供的WebDAV服务同步全文，方法见<http://help.jianguoyun.com/?p=3168>, 简书文章<https://www.jianshu.com/p/e7f5c3e95cf4>。
 
-    ![Zotero同步设置](ch3ZoteroPre3){#fig:ch3ZoteroPre3}
+    ![Zotero同步设置](ch3ZoteroPre3.png){#fig:ch3ZoteroPre3}
 
 ## ZotFile插件设置及将附件转移到坚果云同步盘 {#sec:zotFilePre}
 
@@ -82,11 +82,11 @@ Zotero中的同步设置包括题录同步和全文同步， 我们使用Zotero�
 
 1.  在Zotero中依次点击，如[\[fig:ch3ZotFilePre1\]](#fig:ch3ZotFilePre1){reference-type="autoref" reference="fig:ch3ZotFilePre1"}所示。
 
-    ![打开ZotFile设置](ch3ZotFilePre1){#fig:ch3ZotFilePre1}
+    ![打开ZotFile设置](ch3ZotFilePre1.png){#fig:ch3ZotFilePre1}
 
 2.  点击, 然后点击中小圆圈， 再点击后面的， 选择坚果云中文献全文同步目录，如[\[fig:ch3ZotFilePre2\]](#fig:ch3ZotFilePre2){reference-type="autoref" reference="fig:ch3ZotFilePre2"}所示。
 
-    ![ZotFile文件夹设置](ch3ZotFilePre2){#fig:ch3ZotFilePre2}
+    ![ZotFile文件夹设置](ch3ZotFilePre2.png){#fig:ch3ZotFilePre2}
 
 3.  最后，对于文献库中存在的并且已经链接全文的题录，需要用[ZotFile](http://zotfile.com/)插件重新命名附件，不同电脑之间才会同步。 在Zotero主界面中，用鼠标或按选中所有题录，然后右击依次点击 ， [ZotFile](http://zotfile.com/)会弹出提示：是否移动且重命名附件，点击，如[\[fig:ch3ZotFileRename1\]](#fig:ch3ZotFileRename1){reference-type="autoref" reference="fig:ch3ZotFileRename1"}所示； [ZotFile](http://zotfile.com/)插件会根据默认的规则对附件进行重命名，并且剪切到以前设置的坚果云同步盘中， 而且在Zotero会形成软链接，如[\[fig:ch3ZotFileRename2\]](#fig:ch3ZotFileRename2){reference-type="autoref" reference="fig:ch3ZotFileRename2"}所示， 完成此步骤后，坚果云就会将这些附件同步附件到服务器，在其他电脑会从服务器同步到本地。 重命名这个步骤只需要对于已经存在于文献库中并且已经链接了全文的题录(见[1.3.7](#sec:linkFulltex){reference-type="ref" reference="sec:linkFulltex"})进行此操作， 对于以后从网站下载题录时同时自动下载的附件和手动添加全文的题录[ZotFile](http://zotfile.com/)会自动进行重命名并且移动到坚果云同步目录 [^10]。
 
@@ -96,9 +96,9 @@ Zotero中的同步设置包括题录同步和全文同步， 我们使用Zotero�
 
     在Zotero中点击， 然后在点， 在中的 后面的文本框中添加支持的文件类型，如添加",caj"， 注意caj前面的英文逗号，而且caj后面没有标点。 然后在Zotero中再进行重命名或添加caj 附件时就会重命名且移动到自定义的目录中了。
 
-    ![ZotFile重命名附件提示](ch3ZotFileRename1){#fig:ch3ZotFileRename1 width="0.5\\linewidth"}
+    ![ZotFile重命名附件提示](ch3ZotFileRename1.png){#fig:ch3ZotFileRename1 width="0.5\\linewidth"}
 
-    ![ZotFile重命名附件](ch3ZotFileRename2){#fig:ch3ZotFileRename2}
+    ![ZotFile重命名附件](ch3ZotFileRename2.png){#fig:ch3ZotFileRename2}
 
 ## 如何让不同主题的参考文献附件放在同一个文件夹 {#sec:zotFile_dif_sub_folder}
 
@@ -110,15 +110,15 @@ Zotero中的同步设置包括题录同步和全文同步， 我们使用Zotero�
 
 2.  输入Collection的名字，如，同样建立其他的Collection， 如[\[fig:ch3zotNewCol2\]](#fig:ch3zotNewCol2){reference-type="autoref" reference="fig:ch3zotNewCol2"}所示。
 
-    ![Zotero新建分类（文件夹）](ch3zotNewCol){#fig:ch3zotNewCol width="0.5\\linewidth"}
+    ![Zotero新建分类（文件夹）](ch3zotNewCol.png){#fig:ch3zotNewCol width="0.5\\linewidth"}
 
-    ![新建3d分类（文件夹）](ch3zotNewCol2){#fig:ch3zotNewCol2}
+    ![新建3d分类（文件夹）](ch3zotNewCol2.png){#fig:ch3zotNewCol2}
 
 3.  在Zotero中依次点击，如[\[fig:ch3zotPre0\]](#fig:ch3zotPre0){reference-type="autoref" reference="fig:ch3zotPre0"}所示， 在弹出对话框中点击， 然后点击前的方框，使之选中， 在后面的框中输入，点击，如[\[fig:ch3zotGenerSetting0\]](#fig:ch3zotGenerSetting0){reference-type="autoref" reference="fig:ch3zotGenerSetting0"}所示。
 
-    ![工具ZotFile设置](ch3zotPre){#fig:ch3zotPre0}
+    ![工具ZotFile设置](ch3zotPre.png){#fig:ch3zotPre0}
 
-    ![ZotFile常规设置中输入子文件夹定义](ch3zotGenerSetting0){#fig:ch3zotGenerSetting0}
+    ![ZotFile常规设置中输入子文件夹定义](ch3zotGenerSetting0.png){#fig:ch3zotGenerSetting0}
 
 4.  在导入文献时，将3D打印相关的文献都导入到这个Collection中， （文献的导入见[1.3](#sec:newLibrary){reference-type="ref" reference="sec:newLibrary"}） 如果设置了自动重命名，则导入的条目中的附件就会自动重命名， 并且放到名字为第2步定义的Collection的子文件夹中（ 此子文件夹放在了[ZotFile](http://zotfile.com/)设置的 目录中， [ZotFile](http://zotfile.com/)设置见[3.5](#sec:zotFilePre){reference-type="ref" reference="sec:zotFilePre"}）。
 
@@ -126,9 +126,9 @@ Zotero中的同步设置包括题录同步和全文同步， 我们使用Zotero�
 
 6.  最终效果如[\[fig:ch3zotRenameFinal\]](#fig:ch3zotRenameFinal){reference-type="autoref" reference="fig:ch3zotRenameFinal"}所示。
 
-    ![右击重命名附件](ch3zotRename0){#fig:ch3zotRename0}
+    ![右击重命名附件](ch3zotRename0.png){#fig:ch3zotRename0}
 
-    ![按不同主题分类的附件最终显示效果](ch3zotRenameFinal){#fig:ch3zotRenameFinal}
+    ![按不同主题分类的附件最终显示效果](ch3zotRenameFinal.png){#fig:ch3zotRenameFinal}
 
 ## 使用ZotFile后如何将文件位置恢复到Storage中？ {#sec:zotFile_restore_storage}
 
@@ -140,9 +140,9 @@ Zotero中的同步设置包括题录同步和全文同步， 我们使用Zotero�
 
 3.  然后这些文件就会恢复到Zotero数据目录中的Storage文件夹中的8位字母的文件夹内。
 
-![将链接文件转为存贮文件](ch3zotConFile){#fig:ch3zotConFile}
+![将链接文件转为存贮文件](ch3zotConFile.png){#fig:ch3zotConFile}
 
-![选择转存后是否删除原文件](ch3zotConFileConfirm){#fig:ch3zotConFileConfirm}
+![选择转存后是否删除原文件](ch3zotConFileConfirm.png){#fig:ch3zotConFileConfirm}
 
 ## 不用代码不用其它软件清理使用ZotFile后删除条目剩余的游离附件 {#sec:zotFile_clean_att}
 
@@ -150,29 +150,29 @@ Zotero中的同步设置包括题录同步和全文同步， 我们使用Zotero�
 
 1.  先暂停同步： 依次点击，然后点和前面的框， 使都不要被选中。也可点击，退出账号，在弹出的对话框中点击，如[\[fig:ch3disaSync\]](#fig:ch3disaSync){reference-type="autoref" reference="fig:ch3disaSync"}所示， 注意不要点击前的方框，如[\[fig:ch3zotUnlinWaring\]](#fig:ch3zotUnlinWaring){reference-type="autoref" reference="fig:ch3zotUnlinWaring"}所示。
 
-    ![暂停同步](ch3disaSync){#fig:ch3disaSync}
+    ![暂停同步](ch3disaSync.png){#fig:ch3disaSync}
 
-    ![选择转存后是否删除原文件](ch3zotUnlinWaring){#fig:ch3zotUnlinWaring}
+    ![选择转存后是否删除原文件](ch3zotUnlinWaring.png){#fig:ch3zotUnlinWaring}
 
 2.  在Zotero中依次点击，如[\[fig:ch3zotPre\]](#fig:ch3zotPre){reference-type="autoref" reference="fig:ch3zotPre"}所示， 在弹出对话框中点击，然后再点击后面的, 如[\[fig:ch3zotGenerSetting\]](#fig:ch3zotGenerSetting){reference-type="autoref" reference="fig:ch3zotGenerSetting"}所示。
 
-    ![工具ZotFile设置](ch3zotPre){#fig:ch3zotPre}
+    ![工具ZotFile设置](ch3zotPre.png){#fig:ch3zotPre}
 
-    ![ZotFile常规设置](ch3zotGenerSetting){#fig:ch3zotGenerSetting}
+    ![ZotFile常规设置](ch3zotGenerSetting.png){#fig:ch3zotGenerSetting}
 
 3.  然后选择一个新的目录，如，点击，再返回的对话框中点击，如[\[fig:ch3zotSlePath\]](#fig:ch3zotSlePath){reference-type="autoref" reference="fig:ch3zotSlePath"}所示。
 
-    ![选择文件夹](ch3zotSlePath){#fig:ch3zotSlePath}
+    ![选择文件夹](ch3zotSlePath.png){#fig:ch3zotSlePath}
 
-    ![全选所有条目](ch3zotSelAll){#fig:ch3zotSelAll}
+    ![全选所有条目](ch3zotSelAll.png){#fig:ch3zotSelAll}
 
 4.  在Zotero中点击，然后在右侧详细信息中随便点击一个条目，再按，全选所有文献条目，如[\[fig:ch3zotSelAll\]](#fig:ch3zotSelAll){reference-type="autoref" reference="fig:ch3zotSelAll"}所示。
 
 5.  右击，如[\[fig:ch3zotRename\]](#fig:ch3zotRename){reference-type="autoref" reference="fig:ch3zotRename"}所示，在弹出的对话框点击，如[\[fig:ch3zotConfirm\]](#fig:ch3zotConfirm){reference-type="autoref" reference="fig:ch3zotConfirm"}所示。
 
-    ![重命名附件](ch3zotRename){#fig:ch3zotRename}
+    ![重命名附件](ch3zotRename.png){#fig:ch3zotRename}
 
-    ![确认移动且重命名附件](ch3zotConfirm){#fig:ch3zotConfirm}
+    ![确认移动且重命名附件](ch3zotConfirm.png){#fig:ch3zotConfirm}
 
 6.  这样所有的附件都会转移到新的目录，将原来的文件夹删除即可。如果还是喜欢原来的目录，再重复操作一遍，建立原来的文件夹，再用[ZotFile](http://zotfile.com/) 移动重命名即可。
 
@@ -186,7 +186,7 @@ QQ群有群友问如何导出多篇文献的PDF以方便和其他人共享， �
 
 如果是Zotero 5.0版本，可以安装Delitem插件（下载地址： <https://github.com/redleafnew/delitemwithatt>，插件安装方法 见[3.3](#sec:ZotFileInstall){reference-type="ref" reference="sec:ZotFileInstall"}），安装后，选中需要导出附件（PDF）的条目， 右击选择，如[\[fig:ch3expAtt\]](#fig:ch3expAtt){reference-type="autoref" reference="fig:ch3expAtt"}所示，然后在弹出的对话框中选择保存的目录即可。
 
-![导出所选条目的附件](ch3expAtt){#fig:ch3expAtt}
+![导出所选条目的附件](ch3expAtt.png){#fig:ch3expAtt}
 
 也可以利用[ZotFile](http://zotfile.com/)移动附件的功能将条目的附件移动到某个文件夹， 曲线实现导出多篇文献的附件（PDF）功能，见[怎么样可以只导出多篇文献PDF？](https://zhuanlan.zhihu.com/p/447109035)。
 
