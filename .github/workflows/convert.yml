@@ -22,13 +22,13 @@ jobs:
       - name: Convert via pandoc
         uses: docker://pandoc/core:latest
         with:
-          args: "-s ./docs/Ezotero_intro.tex -t markdown -o ./docs/Ezotero.md --markdown-headings=atx" 
+          args: "-s ./docs/Ezotero_intro.tex -o ./docs/Ezotero.md --markdown-headings=atx -t markdown+ignore_line_breaks+hard_line_breaks" 
       - name: Post-convert
         run: |
-          tree
-          cat ./docs/Ezotero.md
-          rm ./docs/*.tex
-          bash split.sh                  
+          # tree
+          # cat ./docs/Ezotero.md
+          bash split.sh
+          bash clean.sh
           bash commit.sh
 
 
