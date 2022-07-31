@@ -13,12 +13,13 @@ jobs:
     steps:
       - run: |
           pwd
-          bash convert.sh
+          ls
+          bash ./convert.sh
       - uses: docker://pandoc/core:2.9
         with:
           args: "-s ./docs/Ezotero_intro.tex -o ./docs/Ezotero.md" 
       - run: |
-          bash split.sh                  
-          bash commit.sh
+          bash ./split.sh                  
+          bash ./commit.sh
 
 
