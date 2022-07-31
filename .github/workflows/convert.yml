@@ -1,10 +1,11 @@
 name: convert
 
-on: push:
-  paths-ignore:
-  - 'docs/**'
-  - 'mkdocs.yml'
-  - 'overrides'
+on: 
+  push:
+    paths-ignore:
+      - 'docs/**'
+      - 'mkdocs.yml'
+      - 'overrides'
 
 jobs:
   convert:
