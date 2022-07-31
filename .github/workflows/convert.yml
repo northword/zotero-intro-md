@@ -23,7 +23,7 @@ jobs:
       - name: Convert via pandoc
         uses: docker://pandoc/core:latest
         with:
-          args: "-s Ezotero_intro.tex -o Ezotero.md --markdown-headings=atx -t markdown+ignore_line_breaks+hard_line_breaks" 
+          args: "-s docs/Ezotero_intro.tex -o docs/Ezotero.md --markdown-headings=atx -t markdown+ignore_line_breaks+hard_line_breaks --default-image-extension=png --resource-path=.:image" 
       - name: Post-convert
         run: |
           cd ..
