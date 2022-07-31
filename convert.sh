@@ -1,21 +1,22 @@
 #! /bin/bash
 
-if [ ! -d "docs" ]; then
-  mkdir docs
-fi
-
+# if [ ! -d "docs" ]; then
+#   mkdir docs 
+# fi
+# if [ ! -d "docs/image" ]; then
+#   mkdir docs/image 
+# fi
+rm -rf docs
+mkdir docs docs/image
 cp ./tex/image/* ./docs
+cp ./tex/image/* ./docs/image
 cp ./tex/*.tex ./docs
 if (  type pandoc  ); then
-    pandoc -s ./docs/Ezotero_intro.tex -o ./docs/Ezotero.md
-    rm ./docs/*.tex
+    cd docs
+    pandoc -s Ezotero_intro.tex -o Ezotero.md -t markdown+ignore_line_breaks+hard_line_breaks
+    cd ..
 else
     echo 'nope, no pandoc installed.'
     echo 'This message can be ignored if it is run in GitHub actions, and the docker will run pandoc later.'
-    # wget https://github.com/jgm/pandoc/releases/download/2.18/pandoc-2.18-linux-amd64.tar.gz
-    # tar
-    # conda install pandoc
-    # pandoc -s ./docs/Ezotero_intro.tex -o ./docs/Ezotero.md
-    # rm ./docs/*.tex
 fi
 
