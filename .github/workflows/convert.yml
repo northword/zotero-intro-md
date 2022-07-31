@@ -20,7 +20,7 @@ jobs:
         run: |
           bash convert.sh
       - name: Convert via pandoc
-        uses: docker://pandoc/core:2.9
+        uses: docker://pandoc/core:latest
         with:
           args: "-s ./docs/Ezotero_intro.tex -t markdown -o ./docs/Ezotero.md --markdown-headings=atx" 
       - name: Post-convert
