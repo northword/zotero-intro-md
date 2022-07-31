@@ -9,7 +9,7 @@
 rm -rf docs
 mkdir docs docs/images
 cp README.md docs/index.md
-# cp ./tex/image/* ./docs
+cp ./tex/image/* ./docs
 cp ./tex/image/* ./docs/images
 cp ./tex/*.tex ./docs
 if (  type pandoc  ); then
