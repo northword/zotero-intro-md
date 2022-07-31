@@ -6,4 +6,4 @@ git config user.email "<>"
 git add .
 commit_message=tex2md-$(git log -n1 --format=format:"%h")
 git commit -m $commit_message
-git push origin master
+git push origin main
