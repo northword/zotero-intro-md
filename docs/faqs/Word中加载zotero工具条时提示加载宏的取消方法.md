@@ -1,0 +1,17 @@
+## Word中加载zotero工具条时提示加载宏的取消方法 {#sec:load_mac}
+
+如果先安装的Zotero然后安装的Office或是由于各种原因重装Office，
+重新安装Zotero在Word中的工具条后在启动Word可能会有
+如[\[fig:ch5WordMacroDisabled\]](#fig:ch5WordMacroDisabled){reference-type="autoref"
+reference="fig:ch5WordMacroDisabled"}的对话框:
+
+![提示宏已被禁用的安全警告](ch5WordMacroDisabled){#fig:ch5WordMacroDisabled}
+
+取消这些安全警告的方法：
+
+在Word中依次点击， 将启动目录填写进去。 如。
+如[\[fig:ch5AddTrustedLoc\]](#fig:ch5AddTrustedLoc){reference-type="autoref"
+reference="fig:ch5AddTrustedLoc"}所示。
+
+![将启动目录添加到受信任位置](ch5AddTrustedLoc){#fig:ch5AddTrustedLoc}
+

@@ -1,0 +1,104 @@
+## 不用安装其它软件清理删除条目后残留的PDF方法 {#sec:delPDFUingJS}
+
+如果使用了[ZotFile](http://zotfile.com/)插件后
+[^20]，在Zotero中删除条目后， 附件不会同时删除，
+时间长了之后[ZotFile](http://zotfile.com/)目录中会残留大量不需要的附件，
+上一节（[\[{sec:Delete_attach}\]](#{sec:Delete_attach}){reference-type="ref"
+reference="{sec:Delete_attach}"}）介绍了删除条目时同时删除附件的方法，
+但是有的清除方法利用python脚本删除，需要安装python，有的需要把链接文件转为存贮的文件，
+用起来不太方便，经过摸索，编写了一个JavaScript脚本，
+直接在Zotero中操作即可，不需要额外安装软件。
+
+使用前请注意：1.附件的清理不可恢复，请提前备份。
+2.不属于Zotero条目附件的文件不要放在[ZotFile](http://zotfile.com/)的目录中，
+会被清理。
+
+1.  在Zotero中依次点击：。
+
+2.  在弹出的对话框中将以下代码复制进去：
+
+    ``` {.JavaScript language="JavaScript"}
+    var truthBeTold = window.confirm("所有附件的清理不可恢复，单击“确定”继续。单击“取消”停止。")
+                                        if (truthBeTold) {
+                                        //清理zotfile目录
+                                        var AllFiles = []; //现在库中所有的文件
+                                        var DirFiles = []; //当前文件夹中的文件
+                                        var DelFileNum = 0; //被清理的文件个数
+                                        var path = Zotero.ZotFile.getPref("dest_dir")   //得到zotfile目录
+                                        var FullPath ='' //文件的完整路径
+                                        var OutText="";//供输出的文本，主要用于换行
+                                        //得到当前库中的附件
+                                        var s = new Zotero.Search();
+                                        s.libraryID = Zotero.Libraries.userLibraryID;
+                                        var results = await s.search();
+                                        var items = await Zotero.Items.getAsync(results);
+                                        for (let item of items){
+                                        let file = await getFilePath(item);
+                                        if (file){
+                                            AllFiles.push(OS.Path.basename(file));//只存入文件名
+                                        }
+                                        }
+
+                                        //得到ZotFile目录中的文件
+                                        await Zotero.File.iterateDirectory(path, async function(entry){
+                                            if (!entry.isDir) {
+                                                DirFiles.push(entry.name);
+                                            }
+                                        });
+
+                                        //判断是否在库的文件中
+                                        for (let DirFile of DirFiles){
+                                            if (AllFiles.indexOf(DirFile)==-1){
+                                            DelFileNum += 1;//计数器加1
+                                            FullPath = OS.Path.join(path, DirFile);
+                                            OutText += DelFileNum + ": "+ DirFile + "\n" 
+                                            await OS.File.remove(FullPath); //删除文件
+                                            }
+                                        }
+                                        alert(DelFileNum + "个文件被清理。\n 被清理的文件：\n" + OutText);
+                                        async function getFilePath(item) { //1 函数
+                                        if (item && !item.isNote()) { //2 if
+                                                if (item.isRegularItem()) { // Regular Item 一般条目//3 if 
+                                                let attachmentIDs = item.getAttachments();
+                                                    for (let id of attachmentIDs) { //4 for
+                                                        var file = await Zotero.Items.get(id).getFilePathAsync();
+                                                        return file;
+                                                    } //4 for
+                                                } // 3 if
+                                                if (item.isAttachment()) { //附件条目 5 if
+                                                        var file = await item.getFilePathAsync();
+                                                        return file;
+                                                }//5if
+                                        } //2 if
+                                        } 
+                                        }
+    ```
+
+3.  点击Run，根据提示进行操作，如[\[fig:ch5DelAttPrompt\]](#fig:ch5DelAttPrompt){reference-type="autoref"
+    reference="fig:ch5DelAttPrompt"}所示。
+
+    ![清除残留附件时的提示](ch5DelAttPrompt){#fig:ch5DelAttPrompt}
+
+4.  最后结果如[\[fig:ch5DelAttRes\]](#fig:ch5DelAttRes){reference-type="autoref"
+    reference="fig:ch5DelAttRes"}所示。
+
+    ![清除残留附件的结果提示](ch5DelAttRes){#fig:ch5DelAttRes}
+
+5.  可以先将上面JavaScript代码中的
+
+    ``` {.JavaScript language="JavaScript"}
+    awaitOS.File.remove(FullPath);//删除文件
+    ```
+
+    前面加上//，注释掉删除文件的语句，变为
+
+    ``` {.JavaScript language="JavaScript"}
+    //awaitOS.File.remove(FullPath);//删除文件
+    ```
+
+    运行一下代码，看看即将删除的文件，如果没有错误了再正式运行
+    清理残留的附件。
+
+感谢 \@林知 提供的列举文件夹中文件的代码。本节内容也可见于
+[Zotero不用安装其它软件清理删除条目后残留的PDF方法](https://zhuanlan.zhihu.com/p/356071795)。
+

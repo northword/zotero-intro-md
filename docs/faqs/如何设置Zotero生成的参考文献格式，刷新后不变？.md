@@ -1,0 +1,35 @@
+## 如何设置Zotero生成的参考文献格式，刷新后不变？ {#sec:refresh}
+
+Endnote在Word的工具栏中可以设置文末参考文献列表的格式，而Zotero中没有这些功能，
+如果只是单纯设置格式，那么再插入其他或修改参考文献后格式就会恢复到默认的字体格式，
+但可以通过在Word中的"书目"样式来实现，而且刷新后也可以保持不变。 参考
+网友@滏阳河边捉蚯蚓 的方法，具体步骤如下：
+
+1.  用Zotero在Word中生成参考文献后(参见[2.1](#sec:insertRef){reference-type="ref"
+    reference="sec:insertRef"})，
+    将光标定位到参考文献中，或选中生成的参考文献，点击样式处右下角的箭头，
+    然后向下拉找到，再点击后面的向下的箭头，
+    点击,如[\[fig:ch5Biblio\]](#fig:ch5Biblio){reference-type="autoref"
+    reference="fig:ch5Biblio"}所示：
+
+    ![找到书目样式](ch5Biblio){#fig:ch5Biblio}
+
+2.  根据期刊或毕业论文排版要求设置格式，如可以将英文字体设置为Times New
+    Roman， 字号：五号，点击在弹出的对话框中设置缩进，行间距等，如
+    可以设置行间距为20磅，如[\[fig:ch5Format\]](#fig:ch5Format){reference-type="autoref"
+    reference="fig:ch5Format"}，[\[fig:ch5Hanging\]](#fig:ch5Hanging){reference-type="autoref"
+    reference="fig:ch5Hanging"}所示。
+
+    ![对样式进行修改](ch5Format){#fig:ch5Format}
+
+    ![设置悬挂缩进](ch5Hanging){#fig:ch5Hanging}
+
+3.  如果都确定后，发现文末参考文献格式没有变化，那么选中所有参考文献，
+    再点击中的，
+    如[\[fig:ch5FreshFinalformat\]](#fig:ch5FreshFinalformat){reference-type="autoref"
+    reference="fig:ch5FreshFinalformat"}所示。
+
+    ![全选后再次点击](ch5FreshFinalformat){#fig:ch5FreshFinalformat}
+
+4.  如果再插入文献或刷新后，会发现格式仍然是我们刚才设置的格式。
+

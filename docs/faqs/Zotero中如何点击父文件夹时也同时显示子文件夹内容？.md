@@ -1,0 +1,28 @@
+## Zotero中如何点击父文件夹时也同时显示子文件夹内容？ {#sec:ShowSub}
+
+例如我有一个分类为"其它"，"其它"下面又有"安全"、"无损检测"和"蛋白质组学及氧化"三个子分类，
+"其它"中有6篇文献，"安全"有28篇文献，"无损检测"48篇文献，"蛋白质组学及氧化"5篇文献，
+但在点击"其它"时只显示了6篇文献，子分类"安全"、"无损检测"等文件夹中的文献没有显示，如
+[\[fig:ch5ShowSub\]](#fig:ch5ShowSub){reference-type="autoref"
+reference="fig:ch5ShowSub"}所示，如何在点击其他时显示所有的6+28+48+5=87篇文献呢？
+设置方法为：
+
+在Zotero中依次点击，如
+[\[fig:ch5ShowItemSub\]](#fig:ch5ShowItemSub){reference-type="autoref"
+reference="fig:ch5ShowItemSub"}所示，
+
+![子分类中的文献不显示到父分类中](ch5ShowSub){#fig:ch5ShowSub}
+
+![设置子分类中的文献显示到父分类中](ch5ShowItemSub){#fig:ch5ShowItemSub}
+
+则在下一次点击父文件夹时，其子文件夹中的文献也会显示出来，
+子分类中的文献显示到父分类的最终结果如
+[\[fig:ch5ShowSubAll\]](#fig:ch5ShowSubAll){reference-type="autoref"
+reference="fig:ch5ShowSubAll"}所示[^23]，如果是老版本的 Zotero，
+请参见<https://zhuanlan.zhihu.com/p/261375851>。
+关于此问题的讨论也可见[Sources in sub-folders not showing up in
+higher-level
+folders](https://forums.zotero.org/discussion/68833/sources-in-sub-folders-not-showing-up-in-higher-level-folders)。
+
+![设置子分类中的文献显示到父分类中](ch5ShowSubAll){#fig:ch5ShowSubAll}
+

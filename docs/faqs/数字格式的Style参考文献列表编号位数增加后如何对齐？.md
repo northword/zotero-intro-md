@@ -1,0 +1,37 @@
+## 数字格式的Style参考文献列表编号位数增加后如何对齐？ {#sec:align}
+
+有的Style参考文献编号位数增加后不对齐了（如从9增加到10后，从1位增加到2位）
+如[\[fig:ch5non-align\]](#fig:ch5non-align){reference-type="autoref"
+reference="fig:ch5non-align"}所示：
+
+![参考文献编号增加后显示不对齐](ch5non-align){#fig:ch5non-align}
+
+可以通过修改style文件来解决：
+
+1.  用任何文本文件编辑器，如记事本，VS Code，或Zotero自带的Style
+    Editor打开csl文件。
+
+2.  找到bibliography
+    字段，添加`second-field-align="flush"`，形成诸如这样的形式：
+
+    ``` {.xml language="XML"}
+    <bibliography entry-spacing="0" et-al-min="4" et-al-use-first="3"
+                                     line-spacing="1" second-field-align="flush">
+                        <layout suffix="." locale="en">
+                        <text variable="citation-number" prefix="[" suffix="]"/>
+                        <text macro="author" suffix=". "/>
+                        .....
+    ```
+
+3.  而且要保证`<text variable="citation-number" prefix="[" suffix="]"/>`
+    字段在`<layout` 和`</layout>`之间。
+
+4.  保存文件。
+
+5.  在Word的Zotero工具条中点击，或点击切换为其他Style再切换回来。
+
+6.  看是不是对齐了，效果如[\[fig:ch5aligned\]](#fig:ch5aligned){reference-type="autoref"
+    reference="fig:ch5aligned"}所示。
+
+    ![修改后参考文献可以对齐的效果](ch5aligned){#fig:ch5aligned}
+

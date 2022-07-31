@@ -1,0 +1,62 @@
+## 如何备份和恢复Zotero数据 {#sec:back}
+
+Zotero的备份包括其设置（或称为配置，包括插件及其设置、文件的存贮路径）和
+数据（主要包括其文献条目、附件、style、translator等）。不要指望通过同步
+来备份，同时只是同步了参考文献条目和存放在storage目录中的附件，而Zotero
+的设置、存为链接的附件、style、translator不会被同步。
+
+### Zotero设置的备份与恢复
+
+不同系统Zotero配置默认位置见 [Profile directory
+location](https://www.zotero.org/support/kb/profile_directory)， Win
+10中的默认位置在 , 在Win 10中同时按，输入，回车。就会打开Roaming目录，
+然后再双击Zotero等文件夹进入最终的目录，如vwadz9wo.default，
+备份就是将这个目录复制到一个其他的目录，如。
+恢复设置的过程是按，输入，`<zotero安装路径>\zotero.exe -P`， 如
+`D:\zotero\zotero.exe -P`回车，在弹出的对话框中点击 ，再点击，
+输入profile的名称，点击， 找到刚才备份的目录，如，最后点。
+在返回的界面中点击。如果你的新电脑中目录结构与旧电脑一致，
+原来的设置（包括目录设置，插件、同步的用户）都会回来。以后启动Zotero时按原来的方式即可。
+备份和恢复Zotero设置的图文操作见[Zotero设置的备份与恢复https://zhuanlan.zhihu.com/p/350546813](https://zhuanlan.zhihu.com/p/350546813)。
+
+### Zotero数据的备份与恢复 {#sec:data_dir}
+
+不同操作系统的Zotero数据默认存放位置见<https://www.zotero.org/support/zotero_data>，
+Win 10中的默认位置在
+，具体到自己的Zotero存放位置查看方式为：在Zotero依次点击： ，
+在下面显示的路径即是 当前Zotero数据存放的位置。
+
+数据文件夹中几个比较重要的目录和文件：为检索引擎文件存放处；
+为csl文件存放处；翻译器如cnki.js存放处；
+为附件（PDF、网页快照等）存放目录。
+用了[ZotFile](http://zotfile.com/)后附件就不再存放于此了。
+zotero.sqlite是这个文件夹中最重要的文件，
+包含条目元信息、笔记、标签等。Zotero启动时读取这个文件。
+zotero.sqlite.bak为zotero.sqlite的备份
+（关闭zotero时或此文件超过12h没更新时会更新），
+zotero.sqlite.1.bak为zotero升级时zotero.sqlite的备份。
+
+备份Zotero数据的方法就是将这个目录复制到其他安全的地方即可。
+恢复Zotero数据的方式为在Zotero依次点击，
+点击，选定自己备份的目录，根据提示重新启动Zotero即可打开以前的数据。
+备份和恢复Zotero数据的图文操作见[Zotero数据的备份与恢复https://zhuanlan.zhihu.com/p/350549136](https://zhuanlan.zhihu.com/p/350549136)。
+
+除了手动进行Zotero的设置和数据进行备份外，还可以利用JavaScript脚本进行设置和数据
+的备份。前期经过摸索，编写了一个自动备份配置和数据的JavaScript，请有兴趣的测试。
+
+1.  到[https://github.com/redleafnew/zotero-javascripts/](https://github.com/redleafnew/zotero-javascripts/blob/main/8back%20up%20profile%20and%20data.js)，
+    点击，复制或另存JS脚本。
+
+2.  在Zotero中依次点击。
+
+3.  将代码复制到Code窗口内。
+
+4.  在代码框中将`var back_path = 'f:\\backup';//备份目录`，
+    单引号内的内容修改为自己的目录。
+
+5.  点击。
+
+6.  则配置和数据会备份到4设置目录下相应日期的和文件夹中。
+
+利用JavaScript进行设置和数据备份的过程也可见[Zotero利用JavaScript备份配置和数据](https://zhuanlan.zhihu.com/p/357859432)。
+
