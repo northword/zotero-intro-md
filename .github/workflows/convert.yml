@@ -11,15 +11,18 @@ jobs:
   convert:
     runs-on: ubuntu-18.04
     steps:
+      - uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
       - run: |
           pwd
-          ls
-          bash ./convert.sh
+          ll
+          bash convert.sh
       - uses: docker://pandoc/core:2.9
         with:
           args: "-s ./docs/Ezotero_intro.tex -o ./docs/Ezotero.md" 
       - run: |
-          bash ./split.sh                  
-          bash ./commit.sh
+          bash split.sh                  
+          bash commit.sh
 
 
