@@ -1214,7 +1214,7 @@
 <h2 id="sec:remove_doi">彻底解决参考文献显示网址及DOI问题<a class="headerlink" href="#sec:remove_doi" title="Permanent link">&para;</a></h2>
 <p><a href="https://zhuanlan.zhihu.com/p/349555378">使用GB/7714-2015相关csl时文末显示的访问日期如何隐藏</a> 介绍了让参考文献末尾的网址隐藏的方法， 但很多人在使用过程中即使 前的框中没有对勾但某些参考文献后面仍然有网址及DOI出现。 下面提供一个通过修改csl文件彻底解决这个问题。</p>
 <p>在Zotero中点击 打开你的数据文件夹，如<a href="#fig:ch5showDataDir" reference="fig:ch5showDataDir" reference-type="autoref">[fig:ch5showDataDir]</a>所示。</p>
-<p><img alt="显示数据文件夹" id="fig:ch5showDataDir" src="ch5showDataDir" /></p>
+<p><img alt="显示数据文件夹" id="fig:ch5showDataDir" src="ch5showDataDir.png" /></p>
 <p>双击styles文件夹，找到你应用的style文件， 如china-national-standard-gb-t-7714-2015-note.csl， 用任何文本编辑器打开，如记事本、Notepad++、VS Code等， 找到控制访问日期/DOI和URL的字段， 将其删除或注释（在需要注释的代码前加\&lt;!&ndash;，后面加&ndash;>，如：</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1"></a><a href="#__codelineno-0-1"><span class="linenos" data-linenos="1 "></span></a><span class="cm">&lt;!--&lt;text macro=&quot;accessed-date&quot;/&gt;</span>
 <a id="__codelineno-0-2" name="__codelineno-0-2"></a><a href="#__codelineno-0-2"><span class="linenos" data-linenos="2 "></span></a><span class="cm">                    &lt;group delimiter=&quot;. &quot; prefix=&quot;. &quot;&gt;</span>
@@ -1232,7 +1232,7 @@
   <small>
     
       最后更新:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_datetime">2022-07-31 20:47:38</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_datetime">2022-07-31 22:30:57</span>
       
     
   </small>

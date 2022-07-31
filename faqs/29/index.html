@@ -1213,31 +1213,31 @@
 
 <h2 id="sec:footnotes">插入文献后为什么显示为脚注或尾注？<a class="headerlink" href="#sec:footnotes" title="Permanent link">&para;</a></h2>
 <p>有时在Word中插入参考文献使用China National Standard GB/T 7714-2015 csl 文件插入参考文献后显示为脚注或尾注，而且编号是罗马数字，如<a href="#fig:ch5footnotes" reference="fig:ch5footnotes" reference-type="autoref">[fig:ch5footnotes]</a>所示:</p>
-<p><img alt="参考文献显示为脚注" id="fig:ch5footnotes" src="ch5footnotes" /></p>
+<p><img alt="参考文献显示为脚注" id="fig:ch5footnotes" src="ch5footnotes.png" /></p>
 <p>产生这个问题的原因是选用的csl文件（csl文件名称中可能含有note字样） 生成的是脚注或尾注格式的参考文献， 确认的方式是在Word中的Zotero工具条上点击， 看下Language下是否为Display Citation As: Footnotes或Endnotes， 如果是，这就是生成这样参考文献的原因。 而参考文献在文章末尾的应该是Store Citation As: Field, Bookmark。 如果将显示为传统的在文章末尾，可以按以下步骤：</p>
 <ol>
 <li>
 <p>在Word中的Zotero工具条上点击， 如果显示为Display Citation As: 中选中的是 Endnotes， 则点击Footnotes前的单选按钮。点击，如<a href="#fig:ch5footnotes1" reference="fig:ch5footnotes1" reference-type="autoref">[fig:ch5footnotes1]</a>。</p>
-<p><img alt="将脚注切的为尾注" id="fig:ch5footnotes1" src="ch5footnotes1" /></p>
+<p><img alt="将脚注切的为尾注" id="fig:ch5footnotes1" src="ch5footnotes1.png" /></p>
 </li>
 <li>
 <p>在Word中的Zotero工具条上点击， 选择China National Standard GB/T 7714-2015 （numeric, Chinese）, 不要选择带note字样的。点击，如<a href="#ch5changeStyle" reference="ch5changeStyle" reference-type="autoref">[ch5changeStyle]</a>。</p>
-<p><img alt="切换为不带note的style" id="ch5changeStyle" src="ch5changeStyle" /></p>
+<p><img alt="切换为不带note的style" id="ch5changeStyle" src="ch5changeStyle.png" /></p>
 </li>
 <li>
 <p>如果参考文献还是没有在文章末尾出现，点击工具条上的， 正常情况下参考文献应该会出现在文章末尾，如<a href="#ch5EndofArt" reference="ch5EndofArt" reference-type="autoref">[ch5EndofArt]</a>所示。</p>
-<p><img alt="切换为不带note的style" id="ch5EndofArt" src="ch5EndofArt" /></p>
+<p><img alt="切换为不带note的style" id="ch5EndofArt" src="ch5EndofArt.png" /></p>
 </li>
 </ol>
 <p>以上过程实际上是更改sytle的过程，如<a href="#sec:changeStyle" reference="sec:changeStyle" reference-type="ref">2.3</a>所述， 但要先转为Footnotes格式，否则可能会报错， 有可能是Zotero的bug，出现此对话框，如<a href="#ch5ChangeCLSError" reference="ch5ChangeCLSError" reference-type="autoref">[ch5ChangeCLSError]</a>所示， 可以点&rdquo;否&rdquo;。</p>
-<p><img alt="切换style可能会报错" id="ch5ChangeCLSError" src="ch5ChangeCLSError" /></p>
+<p><img alt="切换style可能会报错" id="ch5ChangeCLSError" src="ch5ChangeCLSError.png" /></p>
 
   <hr>
 <div class="md-source-file">
   <small>
     
       最后更新:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_datetime">2022-07-31 20:47:38</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_datetime">2022-07-31 22:30:57</span>
       
     
   </small>
