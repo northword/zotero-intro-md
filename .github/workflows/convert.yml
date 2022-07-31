@@ -25,6 +25,9 @@ jobs:
           args: "-s ./docs/Ezotero_intro.tex -o ./docs/Ezotero.md" 
       - name: Post-convert
         run: |
+          ls
+          ls */*
+          tree
           rm ./docs/*.tex
           bash split.sh                  
           bash commit.sh
