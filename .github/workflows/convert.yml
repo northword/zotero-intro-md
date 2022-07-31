@@ -9,7 +9,7 @@ on:
 
 jobs:
   convert:
-    runs-on: ubuntu-18.04
+    runs-on: ubuntu-latest
     steps:
       - name: Checkout
         uses: actions/checkout@v3
@@ -19,10 +19,10 @@ jobs:
       - name: Pre-convert
         run: |
           bash convert.sh
-      - name: Convert via pandoc
-        uses: docker://pandoc/core:2.9
-        with:
-          args: "-s ./docs/Ezotero_intro.tex -o ./docs/Ezotero.md" 
+      # - name: Convert via pandoc
+      #   uses: docker://pandoc/core:2.9
+      #   with:
+      #     args: "-s ./docs/Ezotero_intro.tex -o ./docs/Ezotero.md" 
       - name: Post-convert
         run: |
           tree
