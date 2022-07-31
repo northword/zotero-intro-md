@@ -8,6 +8,7 @@
 # fi
 rm -rf docs
 mkdir docs docs/image
+cp README.md docs/index.md
 cp ./tex/image/* ./docs
 cp ./tex/image/* ./docs/image
 cp ./tex/*.tex ./docs
