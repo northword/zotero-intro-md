@@ -1,0 +1,1659 @@
+
+<!doctype html>
+<html lang="zh" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="优雅地用 Zotero 进行文献管理和论文写作 - A Short Chinese Introduction to Zotero">
+      
+      
+      
+        <link rel="canonical" href="https://northword.github.io/zotero-intro-md/chapter1/">
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.3.1, mkdocs-material-8.3.9">
+    
+    
+      
+        <title>Zotero下载安装及题录导入[^3] {#ch:install} - Zotero introduction</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.1d29e8d0.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.cbb835fc.min.css">
+        
+      
+      
+    
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Karla:300,300i,400,400i,700,700i%7CUbuntu+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Karla";--md-code-font:"Ubuntu Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    
+    <script>__md_scope=new URL("..",location),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&"object"==typeof palette.color)for(var key of Object.keys(palette.color))document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#ch:install" class="md-skip">
+          跳转至
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="页眉">
+    <a href=".." title="Zotero introduction" class="md-header__button md-logo" aria-label="Zotero introduction" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Zotero introduction
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Zotero下载安装及题录导入[^3] {#ch:install}
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      <form class="md-header__option" data-md-component="palette">
+        
+          
+          
+          <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_1">
+          
+            <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_2" hidden>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 7H7a5 5 0 0 0-5 5 5 5 0 0 0 5 5h10a5 5 0 0 0 5-5 5 5 0 0 0-5-5m0 8a3 3 0 0 1-3-3 3 3 0 0 1 3-3 3 3 0 0 1 3 3 3 3 0 0 1-3 3Z"/></svg>
+            </label>
+          
+        
+          
+          
+          <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_2">
+          
+            <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_1" hidden>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 6H7c-3.31 0-6 2.69-6 6s2.69 6 6 6h10c3.31 0 6-2.69 6-6s-2.69-6-6-6zm0 10H7c-2.21 0-4-1.79-4-4s1.79-4 4-4h10c2.21 0 4 1.79 4 4s-1.79 4-4 4zM7 9c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"/></svg>
+            </label>
+          
+        
+      </form>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="搜索" placeholder="搜索" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="查找">
+        
+        <button type="reset" class="md-search__icon md-icon" aria-label="清空当前内容" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            正在初始化搜索引擎
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/northword/zotero-intro-md" title="前往仓库" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    zotero-intro-md
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+<nav class="md-nav md-nav--primary" aria-label="导航栏" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="Zotero introduction" class="md-nav__button md-logo" aria-label="Zotero introduction" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    Zotero introduction
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/northword/zotero-intro-md" title="前往仓库" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    zotero-intro-md
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        优雅地用 Zotero 进行文献管理和论文写作
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../chapter0/" class="md-nav__link">
+        内容简介 {#内容简介 .unnumbered}
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Zotero下载安装及题录导入[^3] {#ch:install}
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        Zotero下载安装及题录导入[^3] {#ch:install}
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#zotero的安装" class="md-nav__link">
+    Zotero的安装
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#浏览器插件的安装" class="md-nav__link">
+    浏览器插件的安装
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sec:newLibrary" class="md-nav__link">
+    建立自己的Zotero文献库
+  </a>
+  
+    <nav class="md-nav" aria-label="建立自己的Zotero文献库">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#设置文献库在硬盘上的位置" class="md-nav__link">
+    设置文献库在硬盘上的位置
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sec:ImportFromWeb" class="md-nav__link">
+    从网站导入题录及全文
+  </a>
+  
+    <nav class="md-nav" aria-label="从网站导入题录及全文">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#science-direct文献导入" class="md-nav__link">
+    Science Direct文献导入
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sec:cnki" class="md-nav__link">
+    中国知网文献导入
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#通过google-scholar导入文献" class="md-nav__link">
+    通过Google Scholar导入文献
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#通过文献标识符导入题录" class="md-nav__link">
+    通过文献标识符导入题录
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sec:EngPDFIm" class="md-nav__link">
+    已有PDF文献的导入
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#OtherRefSoft" class="md-nav__link">
+    从其他文献管理软件导入
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sec:ManualImport" class="md-nav__link">
+    手动录入题录
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sec:linkFulltex" class="md-nav__link">
+    链接全文
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sec:chang_pdf_browser" class="md-nav__link">
+    Zotero 6.0修改打开附件（PDF）的阅读器？
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sec:delDup" class="md-nav__link">
+    删除（合并）重复文献
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../chapter2/" class="md-nav__link">
+        在Word中写作时用Zotero插入参考文献 {#ch:insert}
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../chapter3/" class="md-nav__link">
+        利用坚果云同步全文[^8] {#ch:syn}
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../chapter4/" class="md-nav__link">
+        Zotero群组的使用[^11] {#ch:group}
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_7" type="checkbox" id="__nav_7" >
+      
+      
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_7">
+          Faqs
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Faqs" data-md-level="1">
+        <label class="md-nav__title" for="__nav_7">
+          <span class="md-nav__icon md-icon"></span>
+          Faqs
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../faqs/0/" class="md-nav__link">
+        0
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../faqs/1/" class="md-nav__link">
+        1
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../faqs/10/" class="md-nav__link">
+        10
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../faqs/11/" class="md-nav__link">
+        11
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../faqs/12/" class="md-nav__link">
+        12
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../faqs/13/" class="md-nav__link">
+        13
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../faqs/14/" class="md-nav__link">
+        14
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../faqs/15/" class="md-nav__link">
+        15
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../faqs/16/" class="md-nav__link">
+        16
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../faqs/17/" class="md-nav__link">
+        17
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../faqs/18/" class="md-nav__link">
+        18
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../faqs/19/" class="md-nav__link">
+        19
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../faqs/2/" class="md-nav__link">
+        2
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../faqs/20/" class="md-nav__link">
+        20
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../faqs/21/" class="md-nav__link">
+        21
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../faqs/22/" class="md-nav__link">
+        22
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../faqs/23/" class="md-nav__link">
+        23
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../faqs/24/" class="md-nav__link">
+        24
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../faqs/25/" class="md-nav__link">
+        25
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../faqs/26/" class="md-nav__link">
+        26
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../faqs/27/" class="md-nav__link">
+        27
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../faqs/28/" class="md-nav__link">
+        28
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../faqs/29/" class="md-nav__link">
+        29
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../faqs/3/" class="md-nav__link">
+        3
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../faqs/30/" class="md-nav__link">
+        30
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../faqs/31/" class="md-nav__link">
+        31
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../faqs/32/" class="md-nav__link">
+        32
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../faqs/33/" class="md-nav__link">
+        33
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../faqs/34/" class="md-nav__link">
+        34
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../faqs/35/" class="md-nav__link">
+        35
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../faqs/36/" class="md-nav__link">
+        36
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../faqs/37/" class="md-nav__link">
+        37
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../faqs/38/" class="md-nav__link">
+        38
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../faqs/39/" class="md-nav__link">
+        39
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../faqs/4/" class="md-nav__link">
+        4
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../faqs/40/" class="md-nav__link">
+        40
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../faqs/41/" class="md-nav__link">
+        41
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../faqs/42/" class="md-nav__link">
+        42
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../faqs/43/" class="md-nav__link">
+        43
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../faqs/44/" class="md-nav__link">
+        44
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../faqs/45/" class="md-nav__link">
+        45
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../faqs/46/" class="md-nav__link">
+        46
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../faqs/47/" class="md-nav__link">
+        47
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../faqs/5/" class="md-nav__link">
+        5
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../faqs/6/" class="md-nav__link">
+        6
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../faqs/7/" class="md-nav__link">
+        7
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../faqs/8/" class="md-nav__link">
+        8
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../faqs/9/" class="md-nav__link">
+        9
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#zotero的安装" class="md-nav__link">
+    Zotero的安装
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#浏览器插件的安装" class="md-nav__link">
+    浏览器插件的安装
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sec:newLibrary" class="md-nav__link">
+    建立自己的Zotero文献库
+  </a>
+  
+    <nav class="md-nav" aria-label="建立自己的Zotero文献库">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#设置文献库在硬盘上的位置" class="md-nav__link">
+    设置文献库在硬盘上的位置
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sec:ImportFromWeb" class="md-nav__link">
+    从网站导入题录及全文
+  </a>
+  
+    <nav class="md-nav" aria-label="从网站导入题录及全文">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#science-direct文献导入" class="md-nav__link">
+    Science Direct文献导入
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sec:cnki" class="md-nav__link">
+    中国知网文献导入
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#通过google-scholar导入文献" class="md-nav__link">
+    通过Google Scholar导入文献
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#通过文献标识符导入题录" class="md-nav__link">
+    通过文献标识符导入题录
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sec:EngPDFIm" class="md-nav__link">
+    已有PDF文献的导入
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#OtherRefSoft" class="md-nav__link">
+    从其他文献管理软件导入
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sec:ManualImport" class="md-nav__link">
+    手动录入题录
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sec:linkFulltex" class="md-nav__link">
+    链接全文
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sec:chang_pdf_browser" class="md-nav__link">
+    Zotero 6.0修改打开附件（PDF）的阅读器？
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sec:delDup" class="md-nav__link">
+    删除（合并）重复文献
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content" data-md-component="content">
+            <article class="md-content__inner md-typeset">
+              
+                
+  <a href="https://github.com/northword/zotero-intro-md/edit/master/docs/chapter1.md" title="编辑此页" class="md-content__button md-icon">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25Z"/></svg>
+  </a>
+
+
+
+<h1 id="ch:install">Zotero下载安装及题录导入[^3]<a class="headerlink" href="#ch:install" title="Permanent link">&para;</a></h1>
+<h2 id="zotero的安装">Zotero的安装<a class="headerlink" href="#zotero的安装" title="Permanent link">&para;</a></h2>
+<p><a href="https://www.zotero.org/">Zotero</a>原来是基于Firefox浏览器的一个插件，现在有基于桌面的独立安装版。<a href="https://www.zotero.org/">Zotero</a>支持现在常见的操作系统， 如Windows、Linux及MacOS。 可以到<a href="https://www.zotero.org/download/">https://www.zotero.org/download/</a>去下载相应操作系统及位数的安装包。 这里以Windowns 10 64位版本的安装文件为例进行说明。</p>
+<ol>
+<li>
+<p>双击下载的安装文件，如Zotero-x.x.x_setup.exe(x为具体的版本号，<a href="#fig:package" reference="fig:package" reference-type="autoref">[fig:package]</a>)， 首先会显示正在解压的界面，如<a href="#fig:extracting" reference="fig:extracting" reference-type="autoref">[fig:extracting]</a>所示， 如果出现用户帐户控制，点击，如<a href="#fig:userControl" reference="fig:userControl" reference-type="autoref">[fig:userControl]</a>：</p>
+<p><img alt="安装文件解压界面" id="fig:extracting" src="package" width="0.3\linewidth" /></p>
+<p><img alt="安装文件解压界面" id="fig:extracting" src="extracting" /></p>
+</li>
+<li>
+<p>然后出现安装向导，如<a href="#fig:installwiz1" reference="fig:installwiz1" reference-type="autoref">[fig:installwiz1]</a>所示，。</p>
+<p><img alt="安装向导第一步" id="fig:installwiz1" src="ch1userControl" /></p>
+<p><img alt="安装向导第一步" id="fig:installwiz1" src="installwiz1" /></p>
+</li>
+<li>
+<p>接下来选择安装类型，如<a href="#fig:installType" reference="fig:installType" reference-type="autoref">[fig:installType]</a>, 一般选择Standard(标准)就可以，如果有兴趣也可以选择Custom(定制)， 选择Custom在点下一步会提示可以修改安装目录 (默认安装目录为 )以及是否在桌面上及 开始菜单的程序组中放置图标。</p>
+</li>
+<li>
+<p>选择Standard后提示安装目录为， 此处无法修改安装目录， 如<a href="#fig:ch1StartInstall" reference="fig:ch1StartInstall" reference-type="autoref">[fig:ch1StartInstall]</a>。如果要修改需要在上一步选择Custom选项。</p>
+</li>
+<li>
+<p>此时信息已经收集完毕，点击(安装)就开始安装了，如<a href="#fig:ch1Installing" reference="fig:ch1Installing" reference-type="autoref">[fig:ch1Installing]</a>。</p>
+</li>
+<li>
+<p>最后安装完成，点击(完成)就可以打开Zotero，如<a href="#fig:ch1InstallComplete" reference="fig:ch1InstallComplete" reference-type="autoref">[fig:ch1InstallComplete]</a>所示。</p>
+</li>
+<li>
+<p>也可以 <a href="https://www.zotero.org/download/client/dl?channel=release&amp;platform=win32-zip">下载Zip格式</a>， 解压后直接使用。或从<a href="https://github.com/pedrom34/ZoteroPortable">https://github.com/pedrom34/ZoteroPortable</a>下载便携格式， 下载的方法是在页面上点击绿色的按钮， 再点击，下载完毕后解压，运行ZoteroPortable.exe即可打开Zotero，使用也十分方便，甚至可以解压到U盘， 做到真正的便携。使用便携版的另一外好处是Zotero的配置文件和数据文件都在这个文件夹中，如果不放在系统盘， 重装系统时不用再重装Zotero，直接双击ZoteroPortable.exe即可继续使用，便携版的安装及使用详见 <a href="https://zhuanlan.zhihu.com/p/350797263">Zotero便携版的安装与使用 <a href="https://zhuanlan.zhihu.com/p/350797263">https://zhuanlan.zhihu.com/p/350797263</a></a>。</p>
+</li>
+</ol>
+<p><img alt="开始安装" id="fig:ch1StartInstall" src="ch1InstallType" /></p>
+<p><img alt="开始安装" id="fig:ch1StartInstall" src="ch1StartInstall" /></p>
+<p><img alt="Zotero安装完成" id="fig:ch1InstallComplete" src="ch1Installing" /></p>
+<p><img alt="Zotero安装完成" id="fig:ch1InstallComplete" src="ch1InstallComplete" /></p>
+<h2 id="浏览器插件的安装">浏览器插件的安装<a class="headerlink" href="#浏览器插件的安装" title="Permanent link">&para;</a></h2>
+<p>要想快速的导入文献，最好装上Zotero的浏览器插件。 Zotero针对不同的浏览器(Chrome、Firefox、Safari和最新的Chromium内核的Edge,不支持IE浏览器) 有不同的插件。 在这里推荐比较好用的Chrome内核浏览器： CentBrowser(百分浏览器)，可以到<a href="http://www.centbrowser.cn/history.html">http://www.centbrowser.cn/history.html</a> 根据自己的操作系统位数，下载安装版或便携版。</p>
+<p>在访问<a href="https://www.zotero.org/download/">Zotero浏览器插件安装网站https://www.zotero.org/download/</a>时， 网站会检测当前所用浏览器内核，提示安装相应插件， 如<a href="#fig:ch1PluginWeb" reference="fig:ch1PluginWeb" reference-type="autoref">[fig:ch1PluginWeb]</a>所示。可以直接点击， 然后出现是否需要安装的提示，如<a href="#fig:ch1PluginInstall" reference="fig:ch1PluginInstall" reference-type="autoref">[fig:ch1PluginInstall]</a>, 点击进行插件安装。插件的安装过程有可能需要翻墙， 成功安装后会在合适的位置根据当前网页的类型显示不同图标， 一般网页的图标如<a href="#fig:ch1ZoteroIcon" reference="fig:ch1ZoteroIcon" reference-type="autoref">[fig:ch1ZoteroIcon]</a>显示,如果没有打开网站， 则会显示一个灰色的&rdquo;Z&rdquo;。</p>
+<p>如果无法安装，可以到<a href="https://pan.baidu.com/s/1SRsAKk6XV8z8ImGueocPNQ">https://pan.baidu.com/s/1SRsAKk6XV8z8ImGueocPNQ</a>下载针对Chrome内核的插件进行离线安装。</p>
+<p><img alt="Zotero浏览器插件安装网站会自动检测当前浏览器类型" id="fig:ch1PluginWeb" src="ch1PluginWeb" width="0.6\linewidth" /></p>
+<p><img alt="浏览器提示是否安装插件(扩展程序)" id="fig:ch1PluginInstall" src="ch1PluginInstall" width="0.6\linewidth" /></p>
+<p><img alt="Zotero浏览器中显示的图标" id="fig:ch1ZoteroIcon" src="ch1ZoteroIcon" width="0.8\linewidth" /></p>
+<p>下载后离线安装的方法是，以百分浏览器为例， 将下载的zotero_connector_x.crx(x为版本号)拖入百分浏览器， 而后浏览器的提示与<a href="#fig:ch1PluginInstall" reference="fig:ch1PluginInstall" reference-type="autoref">[fig:ch1PluginInstall]</a>类似， 如<a href="#fig:ch1PluginInstall2" reference="fig:ch1PluginInstall2" reference-type="autoref">[fig:ch1PluginInstall2]</a>。</p>
+<p><img alt="将下载的插件插入到百分浏览器后的提示" id="fig:ch1PluginInstall2" src="ch1PluginInstall2" width="0.7\linewidth" /></p>
+<p>Google 的 Chrome 浏览器宣布从最新Chrome版本开始默认只允许从 Chrome Web Store 下载安装扩展程序，网上有一些解决办法，但我没有试成功。 所以只能翻墙在Chrome的应用商店上下载或是使用修改版的Chrome。</p>
+<h2 id="sec:newLibrary">建立自己的Zotero文献库<a class="headerlink" href="#sec:newLibrary" title="Permanent link">&para;</a></h2>
+<h3 id="设置文献库在硬盘上的位置">设置文献库在硬盘上的位置<a class="headerlink" href="#设置文献库在硬盘上的位置" title="Permanent link">&para;</a></h3>
+<ol>
+<li>
+<p>建立自己的Zotero文献库首先需要选择自己的将要建立文献库在硬盘上的位置， 方法是在Zotero中依次点击， 如<a href="#fig:ch1ZoteroPre1" reference="fig:ch1ZoteroPre1" reference-type="autoref">[fig:ch1ZoteroPre1]</a>所示。</p>
+<p><img alt="打开Zotero设置" id="fig:ch1ZoteroPre1" src="ch3ZoteroPre1" /></p>
+</li>
+<li>
+<p>在弹出的Zotero Preferences对话框中，依次点击， 设置Base directory为我们存放全文文件夹。 文献库在Zotero中默认的存贮位置为, 最好我们不要将这些数据不要存放在系统盘，防止系统崩溃造成无法挽回的损失。 我们可以将这个目录改为自己的文件夹，如<a href="#fig:ch3BaseDir" reference="fig:ch3BaseDir" reference-type="autoref">[fig:ch3BaseDir]</a>所示</p>
+<p><img alt="Zotero文件夹设置" id="fig:ch3BaseDir" src="ch3BaseDir" width="0.8\linewidth" /></p>
+</li>
+<li>
+<p>[]{#sec:creat_folder label=&rdquo;sec:creat_folder&rdquo;} 设置完文献存贮位置后，最好还要在Zotero中根据自己的课题方向或文献的类型等建立不同的分类(文件夹)， 方便对文献进行分类管理。 建立分类(文件夹)的方法是在Zotero中依次点击， 如<a href="#fig:ch1ZoteroNewColl1" reference="fig:ch1ZoteroNewColl1" reference-type="autoref">[fig:ch1ZoteroNewColl1]</a>所示，或是在Zotero左侧的上右击， 选择， 在弹出的对话框中输入自己的分类名称，如<a href="#fig:ch1ZoteroNewColl2" reference="fig:ch1ZoteroNewColl2" reference-type="autoref">[fig:ch1ZoteroNewColl2]</a>所示。</p>
+<p><img alt="在Zotero中新建分类步骤2" id="fig:ch1ZoteroNewColl2" src="ch1ZoteroNewColl1" /></p>
+<p><img alt="在Zotero中新建分类步骤2" id="fig:ch1ZoteroNewColl2" src="ch1ZoteroNewColl2" /></p>
+</li>
+<li>
+<p>然后就会看到Zotero左侧面板中出现了刚才新建的分类， 如<a href="#fig:ch1ZoteroNewColl3" reference="fig:ch1ZoteroNewColl3" reference-type="autoref">[fig:ch1ZoteroNewColl3]</a>所示，可以通过此方法建立多个分类， 而且可以通过在分类上右击，选择在分类下面再建立子分类， 如<a href="#fig:ch1ZoteroNewColl4" reference="fig:ch1ZoteroNewColl4" reference-type="autoref">[fig:ch1ZoteroNewColl4]</a>所示[^4]， 如果建立了多个分类（文件夹），在搜索文献结果中如果知道文献属于哪个或哪些文件夹呢？ Windows操作系统中，用鼠标点击选中文献后，按住，文献所属的（分类）文件夹就会高亮显示。 其他操作系统的按钮为： (macOS), 或 (Linux)，详见 <a href="https://www.zotero.org/support/collections_and_tags#identifying_collections_an_item_is_in">Zotero官方文档</a>。</p>
+<p><img alt="可以在Zotero分类中新建子分类" id="fig:ch1ZoteroNewColl4" src="ch1ZoteroNewColl3" /></p>
+<p><img alt="可以在Zotero分类中新建子分类" id="fig:ch1ZoteroNewColl4" src="ch1ZoteroNewColl4" /></p>
+</li>
+</ol>
+<h3 id="sec:ImportFromWeb">从网站导入题录及全文<a class="headerlink" href="#sec:ImportFromWeb" title="Permanent link">&para;</a></h3>
+<p>有很多方式可以在Zotero库中添加文献条目，最方便的还是直接在网上数据库进行导入， 安装浏览器插件(扩展)的目的也正是为此。 浏览器上Zotero的图标会根据当前打开网页的文献类型而显示不同的图标， 默认如<a href="#fig:ch1ZoteroIcon" reference="fig:ch1ZoteroIcon" reference-type="autoref">[fig:ch1ZoteroIcon]</a>显示, 当前网页含有多条文献时显示为文件夹图标，如果是学位论文则显示学位帽图标。 Zotero的这种自动感知功能十分强大， 期刊的网页我目前还没有碰到过不能感知的。实际上自动感知所支持的网页还有Amazon，Nytimes等， 而且Zotero支持的网页数目还在持续增长。 Zotero支持现在常见的网络数据库，如Sciencedirect、Springer及PubMed文献数据库等。我们仅以SD数据库、 中国知网CNKI和Google Scholar为例看一下。</p>
+<h4 id="science-direct文献导入">Science Direct文献导入<a class="headerlink" href="#science-direct文献导入" title="Permanent link">&para;</a></h4>
+<p>完全打开某篇文章网页，鼠标指向Zotero在浏览器中的图标时， 会提示：, 如<a href="#fig:ch1SDImport" reference="fig:ch1SDImport" reference-type="autoref">[fig:ch1SDImport]</a>。 一般括号中会显示当前文献所属的数据库或期刊名称。 此时，点击这个图标，这篇文献就会导入到Zotero库中，如<a href="#fig:ch1SDRef" reference="fig:ch1SDRef" reference-type="autoref">[fig:ch1SDRef]</a>。 比较吸引人的是，如果有这个数据库(期刊)的权限， 这个篇对应的PDF会同时下载下来，而且链接到这篇文献，在Zotero文献库中双击这个条目， 则系统会自动调用PDF阅读器打开这篇文献， 是不是很方便[^5]？ 如果打开文献网页时鼠标指向Zotero在浏览器中的图标时提示 ， 原因是网页还没有完全打开，稍等一会儿或是刷新网页等显示正常了再导入。</p>
+<p><img alt="导入ScienceDirect数据库时的提示" id="fig:ch1SDImport" src="ch1SDImport" width="0.7\linewidth" /></p>
+<p><img alt="导入的ScienceDirect文献在Zotero库中的显示结果" id="fig:ch1SDRef" src="ch1SDRef" width="0.7\linewidth" /></p>
+<h4 id="sec:cnki">中国知网文献导入<a class="headerlink" href="#sec:cnki" title="Permanent link">&para;</a></h4>
+<p>在中国知网主页<a href="http://www.cnki.net/">http://www.cnki.net/</a>搜索结果中点击具体的文献， 打开文献的页面，此时鼠标移向Zotero在浏览器中的图标时，提示, 如<a href="#fig:ch1CNKIImport" reference="fig:ch1CNKIImport" reference-type="autoref">[fig:ch1CNKIImport]</a>,点击这个图标，对应的文献就会导入到Zotero库中，但遗憾的是即使有权限， 对应的全文CAJ或PDF都不会一起导入[^6]。如果<a href="http://www.cnki.net/">http://www.cnki.net/</a> 这个网站不好用，可以试试<a href="http://epub.cnki.net/kns/default.htm">http://epub.cnki.net/kns/default.htm</a>。</p>
+<p>如果你在中国知网检索文献时发现题录无法识别（识别为网页），请确认你是否是在校外通过 VPN登录访问的中国知网， 如果是这种情况，请到 <a href="https://github.com/Zotero-CN/translators_CN">https://github.com/Zotero-CN/translators_CN</a>下载新的 <a href="https://github.com/Zotero-CN/translators_CN">cnki.js</a>并替换电脑上旧的 针对于中国知网的translator <a href="https://github.com/Zotero-CN/translators_CN">cnki.js</a>，或是通过茉莉花插件来更新 <a href="https://github.com/Zotero-CN/translators_CN">cnki.js</a>， 详见<a href="#sec:cnki_fulltext" reference="sec:cnki_fulltext" reference-type="ref">5.6</a>，或是设置一下浏览器详见 <a href="https://zhuanlan.zhihu.com/p/110731827">如何在家愉快地使用Zotero通过远程访问收集知网数据</a>。最好的办法是 通过<a href="http://fsso.cnki.net">http://fsso.cnki.net中国知网高校/机构外部访问系统</a>选择自己 的学校或机构后，点击，而后输入自己在学校或机构的账号、密码，点击，或许 还需要点击同意一些条款，然后浏览器会重新定向到 <a href="www.cnki.net">https://www.cnki.net/</a>，使用就和在学校一样了，当然有 些学校或机构可能没有在<a href="www.cnki.net">https://www.cnki.net/</a>列表上，只能 用上面的其它办法了，在家使用知网也参见 <a href="https://zhuanlan.zhihu.com/p/351547307">Zotero CNKI翻译器更新(适合在家使用知网)</a>。</p>
+<p><img alt="导入中国知网数据库时的提示" id="fig:ch1CNKIImport" src="ch1CNKIImport" width="0.7\linewidth" /></p>
+<h4 id="通过google-scholar导入文献">通过Google Scholar导入文献<a class="headerlink" href="#通过google-scholar导入文献" title="Permanent link">&para;</a></h4>
+<p>在Google Scholar搜索结果页面中，Zotero在浏览器中图标会变成一个文件夹图标， 点击这个小图标，在显示的页面中我们可以选择需要的条目，然后点击， 我们选择的条目就会自动导入的Zotero库中。 但是Zotero的浏览器插件不支持Google Scholar的一些镜像网站(如<a href="https://scholar.glgoo.org/">https://scholar.glgoo.org/</a>)。</p>
+<h3 id="通过文献标识符导入题录">通过文献标识符导入题录<a class="headerlink" href="#通过文献标识符导入题录" title="Permanent link">&para;</a></h3>
+<p>如果已知文献的ISBN、DOI、PMID或arXiv ID， 可以通过文献标识符导入到Zotero库中，在Zotero中，点击魔术棒， 输入这些ID，如DOI：10.1016/j.meatsci.2016.03.026， 如<a href="#fig:DOI" reference="fig:DOI" reference-type="autoref">[fig:DOI]</a>所示，然后按，则对应的文献就会被导入到库中， 注意如用这种方式导入文献也需要保持互联网畅通。</p>
+<p><img alt="通过DOI导入文献" id="fig:DOI" src="ch1DOI" width="0.7\linewidth" /></p>
+<h3 id="sec:EngPDFIm">已有PDF文献的导入<a class="headerlink" href="#sec:EngPDFIm" title="Permanent link">&para;</a></h3>
+<p>对于以前下载的PDF文献，Zotero也可以很方便地提取PDF的元 信息(这里PDF的导入是指英文的PDF文件， 中文PDF的导入方式见<a href="#sec:Chinese_PDF" reference="sec:Chinese_PDF" reference-type="ref">5.33</a>),同时把此PDF作为附件链接到这篇文献中。 已有PDF文献导入的方式是将PDF直接拖入到Zotero中， 如<a href="#fig:ch1PDFImport" reference="fig:ch1PDFImport" reference-type="autoref">[fig:ch1PDFImport]</a>所示， Zotero会自动提取该PDF文件元数据(如文章的作者、题目、年代等信息)， 如<a href="#fig:ch1PDFImport1" reference="fig:ch1PDFImport1" reference-type="autoref">[fig:ch1PDFImport1]</a>所示。</p>
+<p><img alt="直接将PDF文件插入到Zotero中" id="fig:ch1PDFImport" src="ch1PDFImport" width="0.7\linewidth" /></p>
+<p><img alt="Zotero提取PDF元数据" id="fig:ch1PDFImport1" src="ch1PDFImport1" width="0.7\linewidth" /></p>
+<h3 id="OtherRefSoft">从其他文献管理软件导入<a class="headerlink" href="#OtherRefSoft" title="Permanent link">&para;</a></h3>
+<p>如果以前用其他文献管理软件或是从其他人的Zotero库中导入， Zotero可以方便地导入。首先，从其他文献管理软件导出BibTex、RIS或Zotero RDF格式。 然后，在Zotero中点击， 如<a href="#fig:ch1ImportFromOther" reference="fig:ch1ImportFromOther" reference-type="autoref">[fig:ch1ImportFromOther]</a>所示 ，根据提示找到导出的文件即可将那些文献导入到Zotero中。</p>
+<p><img alt="Zotero中手动添加新文献" id="fig:ch1ManualNew" src="ch1ImportFromOther" /></p>
+<p><img alt="Zotero中手动添加新文献" id="fig:ch1ManualNew" src="ch1ManualNew" /></p>
+<h3 id="sec:ManualImport">手动录入题录<a class="headerlink" href="#sec:ManualImport" title="Permanent link">&para;</a></h3>
+<p>对于那些不能从网上找到的文献，如一些老的文献、国家标准、 会议论文等，只能手动录入文献的信息。手动新建文献的方法是： 在Zotero界面中点击图标右边的小箭头， 选择正确的文献类型，如<a href="#fig:ch1ManualNew" reference="fig:ch1ManualNew" reference-type="autoref">[fig:ch1ManualNew]</a>所示， 然后在Zotero右侧填入文献对应的信息，如：题目、作者、年代等信息， 如<a href="#fig:ch1ManualNewBook" reference="fig:ch1ManualNewBook" reference-type="autoref">[fig:ch1ManualNewBook]</a>所示。</p>
+<p><img alt="Zotero中链接文献" id="fig:ch1LinkFile1" src="ch1ManualNewBook" /></p>
+<p><img alt="Zotero中链接文献" id="fig:ch1LinkFile1" src="ch1LinkFile1" /></p>
+<p><img alt="通过右击Zotero中链接文献" id="fig:ch1LinkFile2" src="ch1LinkFile2" width="0.7\linewidth" /></p>
+<h3 id="sec:linkFulltex">链接全文<a class="headerlink" href="#sec:linkFulltex" title="Permanent link">&para;</a></h3>
+<p>对于从其他网站下载的全文或其他附件信息， 我们可以手动链接到参考文献条目中，先选中对应的参考文献条目 ，在Zotero点击回形针图标， 选择， 如<a href="#fig:ch1LinkFile1" reference="fig:ch1LinkFile1" reference-type="autoref">[fig:ch1LinkFile1]</a>所示，找到相应的附件。 或在条目上右击，选择，如<a href="#fig:ch1LinkFile2" reference="fig:ch1LinkFile2" reference-type="autoref">[fig:ch1LinkFile2]</a>所示， 后续步骤与前述相同。链接上附件后，原来存的文件可以删除。</p>
+<h3 id="sec:chang_pdf_browser">Zotero 6.0修改打开附件（PDF）的阅读器？<a class="headerlink" href="#sec:chang_pdf_browser" title="Permanent link">&para;</a></h3>
+<p>在Zotero 6.0中内置了打开PDF的阅读器，按<a href="#sec:linkFulltex" reference="sec:linkFulltex" reference-type="ref">1.3.7</a>链接了全文后， 双击条目或PDF默认情况会调用其内置的PDF阅读器打开附件， 但是在内置的PDF阅读器做的标记、笔记， 用其它PDF阅读器 （如将PDF文件分享给他人后）打开后， 里面的标记、笔记会消失，只能在内置阅读器中 点击另存为其它PDF 或点击时， 再用其它阅读器打开才可以保留标记、笔记， 如果不习惯，可以设置用系统默认的或自定义PDF阅读器。步骤如下：</p>
+<p>在Zotero依次点击， 在File Handling下面，点击Open PDFs Using后面的选择框， 点击 即可使用系统默认的PDF阅读器， 也可以点击，找到自定义的其它打开PDF的程序 ，如<a href="#fig:ch1customPDFBrowser" reference="fig:ch1customPDFBrowser" reference-type="autoref">[fig:ch1customPDFBrowser]</a>所示。</p>
+<p><img alt="自定义打开PDF的软件" id="fig:ch1customPDFBrowser" src="ch1customPDFBrowser" width="0.8\linewidth" /></p>
+<h3 id="sec:delDup">删除（合并）重复文献<a class="headerlink" href="#sec:delDup" title="Permanent link">&para;</a></h3>
+<p>从多个不同数据库导入的文献可能会有重复文献，即两个条目完全相同，这时就需要手动删除重复文献。 Zotero允许一个条目同时存在于多个分类（文件夹）中，这种情况不属于重复文献。删除重复文献的方法 是点击Zotero左侧的，检测到的重复文献就会出现中间的面板中， 点击其中一条文献，与之重复的文献就会全部被选中，右侧面板中显示重复文献的情况。选择其中一条 作为主条目，再点击，重复文献就会被删除（合并）， 如<a href="#fig:ch1MergeDup" reference="fig:ch1MergeDup" reference-type="autoref">[fig:ch1MergeDup]</a>所示。如果删除（合并）多条重复文献，在点击选中条目后，按 或点击选中所有重复文献， 再点击即可，也可以使用JavaScript脚本批量删除（合并）重复文献， 见<a href="#sec:DelDupBatch" reference="sec:DelDupBatch" reference-type="ref">5.18</a>。如何选中重复条目中的某条文献见<a href="#sec:selectDup" reference="sec:selectDup" reference-type="ref">5.17</a>。</p>
+<p><img alt="删除（合并）重复文献" id="fig:ch1MergeDup" src="ch1MergeDup" width="0.7\linewidth" /></p>
+
+  <hr>
+<div class="md-source-file">
+  <small>
+    
+      最后更新:
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_datetime">2022-07-31 20:47:38</span>
+      
+    
+  </small>
+</div>
+
+              
+            </article>
+            
+          </div>
+        </div>
+        
+          <a href="#" class="md-top md-icon" data-md-component="top" hidden>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12Z"/></svg>
+            回到页面顶部
+          </a>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+    <nav class="md-footer__inner md-grid" aria-label="页脚" >
+      
+        
+        <a href="../chapter0/" class="md-footer__link md-footer__link--prev" aria-label="上一页: 内容简介 {#内容简介 .unnumbered}" rel="prev">
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+          </div>
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                上一页
+              </span>
+              内容简介 {#内容简介 .unnumbered}
+            </div>
+          </div>
+        </a>
+      
+      
+        
+        <a href="../chapter2/" class="md-footer__link md-footer__link--next" aria-label="下一页: 在Word中写作时用Zotero插入参考文献 {#ch:insert}" rel="next">
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                下一页
+              </span>
+              在Word中写作时用Zotero插入参考文献 {#ch:insert}
+            </div>
+          </div>
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg>
+          </div>
+        </a>
+      
+    </nav>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright &copy; 2016 - 2022 Northword
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+        <div class="md-social">
+  
+    
+    
+      
+      
+    
+    <a href="https://github.com/redleafnew/Zotero_introduction" target="_blank" rel="noopener" title="github.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+    </a>
+  
+    
+    
+      
+      
+    
+    <a href="https://github.com/northword" target="_blank" rel="noopener" title="github.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    <script id="__config" type="application/json">{"base": "..", "features": ["navigation.indexes", "navigation.top", "navigation.instant"], "search": "../assets/javascripts/workers/search.b97dbffb.min.js", "translations": {"clipboard.copied": "\u5df2\u590d\u5236", "clipboard.copy": "\u590d\u5236", "search.config.lang": "ja", "search.config.pipeline": "trimmer, stemmer", "search.config.separator": "[\\s\\-\uff0c\u3002]+", "search.placeholder": "\u641c\u7d22", "search.result.more.one": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.other": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 # \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.term.missing": "\u7f3a\u5c11", "select.version.title": "\u9009\u62e9\u5f53\u524d\u7248\u672c"}}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.6c7ad80a.min.js"></script>
+      
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+    
+  </body>
+</html>
