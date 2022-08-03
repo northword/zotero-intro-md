@@ -8,6 +8,12 @@
 
 请访问 [https://northword.github.io/zotero-intro-md](https://northword.github.io/zotero-intro-md) 。
 
+## 维护状态
+
+> **Warning**
+> 
+> 本库已迁移到 [Zotero CN/E-Zotero-MD](https://github.com/zotero-cn/e-zotero-md) 维护，请访问 [zotero-cn.github.io/e-zotero-md](https://zotero-cn.github.io/e-zotero-md) 进行阅读。
+
 ## 技术路线
 
 1. 将 github/redleafnew/Zotero_introduction 作为本库的 submodule，便于同步上游更新
